@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
 }
 
 export default function RootLayout({
   children,
-  title = metadata.title,
-  description = metadata.description,
+  title,
+  description,
 }: RootLayoutProps) {
   return (
     <html lang="en">
