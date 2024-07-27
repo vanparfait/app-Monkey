@@ -18,8 +18,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({
   children,
-  title,
-  description,
+  title = metadata.title,
+  description = metadata.description,
 }: RootLayoutProps) {
   return (
     <html lang="en">
